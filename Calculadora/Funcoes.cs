@@ -9,7 +9,7 @@ namespace Calculadora
 {
     public class Funcoes
     {
-        public virtual int MenuPrincipaç()
+        public virtual int MenuPrincipal()
         {
             int selecao;
             int opcoes = 3;
@@ -45,6 +45,17 @@ namespace Calculadora
             Console.WriteLine("Segundo valor: ");
             Valor2 = Convert.ToInt32(Console.ReadLine());
             Total = Valor1 * Valor2;
+            Console.WriteLine("Valor total = " + Total);
+            return Total;
+        }
+        public virtual int Divisao()
+        {
+            int Total, Valor1, Valor2;
+            Console.WriteLine("Primeiro valor: ");
+            Valor1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Segundo valor: ");
+            Valor2 = Convert.ToInt32(Console.ReadLine());
+            Total = Valor1 / Valor2;
             Console.WriteLine("Valor total = " + Total);
             return Total;
         }
